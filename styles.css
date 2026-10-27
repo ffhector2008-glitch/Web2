@@ -1,0 +1,149 @@
+:root {
+  color-scheme: dark;
+  --ink: #3f2fcc;
+  --muted: #0a0a09;
+  --paper: #ebdcdcf3;
+  --surface: #4e4e8f;
+  --accent: #8d0404;
+  --line: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Roboto, sans-serif;
+  font-size: ;
+  line-height: ;
+}
+
+.cabecera,
+main,
+.navegacion,
+footer {
+  width: min(100% - 2rem, 66rem);
+  margin-inline: ;
+}
+
+.cabecera {
+  padding-block: 3.5rem 2rem;
+}
+
+.etiqueta {
+  color: var(--accent);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0.5;
+}
+
+h1 {
+  max-width: 5.ch;
+  margin-bottom: 0.75rem;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+h2 {
+  line-height: 1.;
+}
+
+.navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  border-block: 1px solid var(--line);
+  padding-block: 0.8rem;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #a82910;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: #a82910;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.experiencia {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.9fr);
+  align-items: left;
+  gap: 2rem;
+  padding-block: 3rem;
+}
+.destacado {
+
+}
+figure {
+  margin: 0;
+}
+
+img {
+  display: ;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+}
+
+.bloque {
+  border-top: 1px solid var(--line);
+  padding-block: 2rem;
+}
+
+.recursos {
+  background: var(--surface);
+  padding-inline: 1.25rem;
+}
+
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid var(--line);
+  padding-block: 1.25rem 2rem;
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .cabecera {
+    align-items: felx-start;
+  }
+  
+  .experiencia {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recomendacions {
+  grid-template-columns:1fr;
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
+}
